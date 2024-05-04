@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encouragement for ali</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6b0000; /* Wine red background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff6e0; /* Light orange container */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #7c1515; /* Deep red color for heading */
+            font-size: 32px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff6b6b; /* Coral button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff5252; /* Darker coral on hover */
+        }
+
+        #message {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #7c1515; /* Deep red color for messages */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>a message for my beautiful baby</h1>
+        <div id="message"></div>
+        <button onclick="showMessage()">joud says</button>
+    </div>
+
+    <script>
+        const messages = [
+            "i can't stop smiling around you. you make me so happy.",
+            "i love your humor",
+            "you have the most adorable smile.",
+            "you're the reason for all my happiness.",
+            "you're more than my boy. you're my best friend.",
+            "every day is an adventure with you.",
+            "i'd do anything to see you smile.",
+            "i wouldn't trade your love for all the money in the world.",
+            "i just can't imagine walking through life without you.",
+            "i'm so proud of you.",
+            "you really are an amazing person",
+            "i just love what a cute smile you have.",
+            "you're my lucky charm. my life has gotten so much better since we met.",
+            "you're my forever person.",
+            "your smile makes me melt.",
+            "just being around you fills my heart with so much joy.",
+            "i'm so happy i can talk to you about anything.",
+            "my friends are so jealous i have you.",
+            "i feel so safe in your arms.",
+            "i have the best life partner.",
+            "you're such an interesting guy. you know so much about everything.",
+            "i appreciate you for doing your best.",
+            "i love you more than you will ever know.",
+            "i can't wait to cuddle with you.",
+            "i love it when you send me pics of you",
+            "you make me feel like the luckiest girl in the world.",
+            "thank you for choosing me.",
+            "you show me what love truly means.",
+            "you're amazing",
+            "i believe in you",
+            "who knew that love could bring so much happiness.",
+            "you're not alone, i'm here for you.",
+            "you're the best thing that's ever happened to me",
+            "you're capable of overcoming anything",
+            "i'm proud of you!",
+            "you make me feel like the luckiest person in the world.",
+            "i heart you",
+            "you're perfect",
+            "you're my baby",
+            "i love every little thing about you",
+            "i could use all the stars to list the things that i love about you, but i would soon run out of stars.",
+            "you're my better half",
+            "thank you for the joy that you bring into my life.",
+            "there's nothing i love more in this world than seeing my ali smile.",
+            "i've waited my whole life to meet you."
+        ];
+
+        function showMessage() {
+            const messageDiv = document.getElementById('message');
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            messageDiv.textContent = messages[randomIndex];
+        }
+    </script>
+</body>
+</html>
